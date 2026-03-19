@@ -6,11 +6,11 @@ export const getAI = () => {
   if (!apiKey) {
     throw new Error("GEMINI_API_KEY is not set");
   }
-  const genAI = new GoogleGenerativeAI(apiKey);
-const model = genAI.getGenerativeModel({ 
-  model: MODEL_NAME,
+ const genAI = new GoogleGenerativeAI(apiKey);
 
-  apiVersion: 'v1beta' 
+export const model = genAI.getGenerativeModel({ 
+  model: "gemini-1.5-flash", // جربي تغيرين الاسم لـ flash لأنه أسرع وأخف في الربط
+  apiVersion: "v1beta" 
 });
 
 export const MODEL_NAME = "gemini-3.1-pro-preview";

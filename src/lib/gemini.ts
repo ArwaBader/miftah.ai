@@ -6,8 +6,12 @@ export const getAI = () => {
   if (!apiKey) {
     throw new Error("GEMINI_API_KEY is not set");
   }
-  return new GoogleGenAI({ apiKey });
-};
+  const genAI = new GoogleGenerativeAI(apiKey);
+const model = genAI.getGenerativeModel({ 
+  model: MODEL_NAME,
+
+  apiVersion: 'v1beta' 
+});
 
 export const MODEL_NAME = "gemini-3.1-pro-preview";
 

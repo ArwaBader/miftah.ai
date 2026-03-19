@@ -1,6 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
 
-const apiKey = process.env.GEMINI_API_KEY;
+const apiKey = "AIzaSyA6lgPeo_eRSH7TwB2JKD4ifCbhzons9rw";
 
 export const getAI = () => {
   if (!apiKey) {

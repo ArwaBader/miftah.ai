@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // حطي مفتاحك الجديد هنا بين علامات التنصيص
-const apiKey = "AIzaSy...حطي_المفتاح_هنا"; 
+const apiKey = "AIzaSyC5QUbiA3tkFyp_Et2VfXuKIBCW_6sQBis"; 
 
 const genAI = new GoogleGenerativeAI(apiKey);
 
